@@ -12,8 +12,8 @@
   3. [Usage](#usage)
   4. [License](#license)
   5. [Contributors](#contributors)
-  6. [Tests](#tests)
-  7. [Questions](#questions)
+  6. [Questions](#questions)
+  7. [Preview](#preview)
   
   
   ## Installation
@@ -31,12 +31,11 @@
   
   [Aaron Hernandez](https://github.com/aaronhdm)
   
-  ## Tests
-  
-  K
-  
   ## Questions
   
   If you have any questions about this application you may email me at aaronhdm@gmail.com.
   Or you may reach out at my GitHub: [Aaron Hernandez](https://github.com/aaronhdm).
   
+  ## Preview
+  
+  ![Tech-Blog](https://user-images.githubusercontent.com/107087837/187364416-fc351f2f-43cd-47dd-a0bb-b94c6c5b1ea3.png)
