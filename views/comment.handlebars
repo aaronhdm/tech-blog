@@ -1,0 +1,31 @@
+<div class="card" style="margin-top:10px; margin-left: 10px; margin-right:10px;" >
+      <div class="card-header bg-dark">
+       <h5 class="text-warning">{{blog.name}}</h5>
+       <p class="text-white">Created by {{blog.user.name}} on {{format_date blog.date_created}}</p>
+      </div>
+      <div class="card-body bg-light">
+        <p class="card-text">{{blog.description}}</p>
+      </div>
+    </div>
+
+    <form class="form newComment-form" data-id="{{blog.id}}">
+    <div class="card-body bg-light form-group" style="margin-top:10px; margin-left: 10px; margin-right:10px;">
+    <div class="mb-3">
+    <textarea class="form-control form-input" id="body2" rows="3" placeholder="Text" type="text" ></textarea>
+    </div>
+    </div>
+    <button type="submit" class="btn btn-primary bg-success" style="margin-top:10px; margin-left:550px;" >+ Add Comment</button>
+    </form>
+    
+    {{#each blog.comments as |comment|}}
+    <div class="card-body bg-secondary form-group" style="margin-top:10px; margin-left: 10px; margin-right:10px;">
+      <div class="alert alert-secondary" role="alert">
+      <strong><p style="margin-left:440px;">Comment posted by {{comment.user.name}} on {{format_date comment.date_created}}</p></strong>
+    </div>
+    <div class="mb-3">
+    <textarea class="form-control form-input" id="body" rows="3" placeholder="Text" type="text" >{{comment.body}}</textarea>
+    </div>
+    </div>
+    {{/each}}
+
+    <script src="/js/comment.js"></script>

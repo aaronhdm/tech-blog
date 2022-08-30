@@ -1,0 +1,12 @@
+{{#each blogs as |blog| }}
+<div class="card" style= "margin-top: 10px;">
+  <div class="card-header bg-dark">
+    <h5 class="text-white">{{blog.name}}</h5>
+    <p class="text-white text-white">Created: {{blog.user.name}} - {{format_date blog.date_created}}</p>
+  </div>
+  <div class="card-body bg-light">
+    <p class="card-text">{{blog.description}}</p>
+  </div>
+</div>
+    <a href="/comment/{{blog.id}}"><button class="btn btn-primary btn-block bg-dark" type="button">Comment</button></a>
+{{/each}}

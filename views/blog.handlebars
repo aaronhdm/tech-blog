@@ -1,0 +1,21 @@
+<div class="card" style="margin-top:10px;">
+  <form class="form newBlog-form">
+    <div class="card-header form-group">
+      <input class="form-control form-control-lg form-input" id="title" type="text" placeholder="{{blog.name}}" aria-label=".form-control-lg example">
+    </div>
+    <div class="card-body bg-light form-group" >
+      <div class="mb-3">
+      <textarea class="form-control form-input" id="description" rows="3" type="text" >{{blog.description}}</textarea>
+      </div>
+      <div class="update" style="margin-top:10px;">
+      <button type="submit" class="btn btn-primary btn-block bg-secondary" data-id="{{blog.id}}">Update</button>
+      </div>
+      <div class="delete" style="margin-top:10px;">
+      <button  type="submit" class="btn btn-primary btn-block bg-secondary" data-id2="{{blog.id}}">Delete</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script src="/js/delete_blog.js"></script>
+<script src="/js/update_blog.js"></script>

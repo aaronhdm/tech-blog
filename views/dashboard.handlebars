@@ -1,0 +1,22 @@
+<section class="container-fluid">
+    <div class="row">
+    <div class="col-12 col-md-12 col-lg-12" style= "margin-top: 10px;">
+    {{!-- Welcome --}}
+    <nav class="navbar bg-dark">
+    <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1 text-white">Welcome {{name}}!</span>
+    </div>
+    </nav>
+
+    {{!-- Blog Card --}}
+    {{#each blogs as |blog|}}
+    <div class="d-grid gap-2" style="margin-top:10px;">
+      <a href="/api/dashboard/blog/{{blog.id}}"><button class="btn btn-primary btn-block bg-dark" type="button"><h3>{{blog.name}}</h3> Created: {{format_date blog.date_created}}</button></a>
+    </div>
+    {{/each}}
+    
+    </div>
+    </div>
+</section>
+
+<a href="/api/dashboard/new" class="btn btn-primary" style="margin-top:10px; margin-left:900px;">+ New Blog</a>
